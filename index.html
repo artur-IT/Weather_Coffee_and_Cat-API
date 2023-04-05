@@ -4,59 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>API test</title>
   </head>
   <body>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        font-family: sans-serif;
-        box-sizing: border-box;
-      }
-      body {
-        background-color: #89a;
-      }
-      h1 {
-        margin: 50px 0;
-      }
-      .wrap {
-        display: flex;
-        margin: 0 auto;
-        flex-direction: row;
-        width: 90vw;
-        background-color: blueviolet;
-        /* align-items: center; */
-        justify-content: space-around;
-      }
-      section {
-        padding: 20px 0;
-        width: 30%;
-        height: auto;
-        font-size: 20px;
-        background-color: yellowgreen;
-      }
-      img {
-        max-width: 100%;
-        margin-top: 20px;
-        border: 2px solid black;
-      }
-    </style>
-    <h1>API</h1>
+    <h1>API - My project</h1>
     <div class="wrap">
       <section class="weather">
-        <p>Pogoda po pracy!</p>
-        <div class="weather__show"></div>
+        <p class="title">Pogoda po pracy</p>
+        <div class="weather__show">
+          <div class="weather__grid">
+            <div class="hour">godz.</div>
+            <div class="city">Miasto:</div>
+            <div class="temp">Temp.:</div>
+            <div class="wind">Wiatr:</div>
+            <div class="cloud">Zachmurzenie:</div>
+            <div class="h">14:00</div>
+            <div class="h">15:00</div>
+            <div class="h">16:00</div>
+            <div class="h">17:00</div>
+            <div class="h">18:00</div>
+            <div class="h">19:00</div>
+            <div class="h">20:00</div>
+            <div class="h">21:00</div>
+            <div class="h">22:00</div>
+            <div class="h">23:00</div>
+          </div>
+        </div>
       </section>
       <section class="coffee">
-        <p>Kawa na dziś!</p>
+        <p class="title">Hmmm....</p>
         <div class="coffee__show"></div>
       </section>
       <section class="cats">
-        <p>Rozchmurz się :)</p>
+        <p class="title">Myślę że powinieneś teraz...</p>
         <div class="cats__show"></div>
       </section>
+      <section class="footer"><a href="https://github.com/artur-IT">...artur-IT...</a></section>
     </div>
     <script src="main.js"></script>
   </body>
