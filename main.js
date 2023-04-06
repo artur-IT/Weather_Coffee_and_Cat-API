@@ -4,7 +4,7 @@ let cityGeo;
 
 // API POBIERAJĄCE GEOLOKALIZACJĘ wg IP
 const Geo = () => {
-  const urlGeo = "https://get.geojs.io/v1/ip/geo.json";
+  const urlGeo = "http://ip-api.com/json/?fields=query,lat,lon,city";
   fetch(urlGeo)
     .then((geo) => {
       if (geo.status !== 200) {
@@ -14,8 +14,8 @@ const Geo = () => {
       }
     })
     .then((geo) => {
-      longitudeGeo = geo.longitude;
-      latitudeGeo = geo.latitude;
+      longitudeGeo = geo.lon;
+      latitudeGeo = geo.lat;
       cityGeo = geo.city;
       Weather();
     })
@@ -39,15 +39,25 @@ const Weather = () => {
     .catch((err) => alert(err, "coś z Pogodą jest nie tak!"));
 };
 
-// API Z KAWĄ
-const Coffee = () => {
-  const urlCoffee = "https://coffee.alexflipnote.dev/random.json";
-  fetch(urlCoffee)
-    .then((cup) => {
-      return cup.json();
-    })
-    .then((cup) => showCoffee(cup));
-};
+// API COFFEE
+// const Coffee = () => {
+//   const urlCoffee = "https://coffee.alexflipnote.dev/random.json";
+//   fetch(urlCoffee)
+//     .then((cup) => {
+//       return cup.json();
+//     })
+//     .then((cup) => console.log(cup));
+// };
+
+// API Z LONG WEEKENDS
+// const Weekends = () => {
+//   const urlWeekends = "https://date.nager.at/api/v3/PublicHolidays/2023/PL";
+//   fetch(urlweekends)
+//     .then((days) => {
+//       return days.json();
+//     })
+//     .then((days) => showWeekends(days));
+// };
 
 // API POBIERAJĄCE KOTA
 const Cats = () => {
@@ -103,12 +113,20 @@ const showWeather = (climate) => {
   }
 };
 
+// FURURE
+// const showWeekends = (days) => {
+//   const resultArea = document.querySelector(".weekends__show");
+//   const weekends = document.createElement("div");
+//   resultArea.appendChild(img);
+// };
+
 const showCoffee = (cup) => {
   const resultArea = document.querySelector(".coffee__show");
   const img = document.createElement("img");
-  // console.log(cup);
+  img.src = `https://coffee.alexflipnote.dev/random`;
   resultArea.appendChild(img);
 };
+
 const showCat = (cat) => {
   const resultArea = document.querySelector(".cats__show");
   const img = document.createElement("img");
@@ -118,4 +136,5 @@ const showCat = (cat) => {
 
 // WYKONAJ API
 Geo();
+showCoffee();
 Cats();

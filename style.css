@@ -13,7 +13,7 @@ body {
 }
 h1 {
   color: #ccf4c3;
-  margin: 20px 0;
+  margin: 100px 0 40px 0;
 }
 .wrap {
   display: flex;
@@ -26,6 +26,7 @@ h1 {
 section {
   width: 100%;
   height: auto;
+  margin-bottom: 20px;
   font-size: 20px;
   background-color: #ccf4c3;
   box-shadow: 5px 5px 10px 5px #316a25, -5px -5px 10px 5px #316a25;
@@ -105,6 +106,23 @@ section + section {
   grid-row: 1/2;
   color: red;
 }
+
+/* LONG WEEKENDS */
+/* .weekends__grid {
+  display: grid;
+  grid-template-columns: auto auto 400px repeat(6, 75px);
+  grid-template-rows: repeat(6, 40px);
+  grid-template-areas:
+    "days dateFrom long dateTo"
+    "days dateFrom long dateTo"
+    "days dateFrom long dateTo"
+    "days dateFrom long dateTo"
+    "days dateFrom long dateTo"
+    "days dateFrom long dateTo";
+  background-color: #ccf4c3;
+  font-size: 1rem;
+  margin: 0 20px 15px 20px;
+} */
 img {
   max-width: 90%;
   border: 1px solid #000;
