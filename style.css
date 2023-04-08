@@ -9,11 +9,12 @@
   text-decoration: none;
 }
 body {
-  background-color: #509442;
+  background-image: url("clouds.jpg");
+  background-size: cover;
 }
 h1 {
-  color: #ccf4c3;
-  margin: 100px 0 40px 0;
+  color: #eff0f4;
+  margin: 40px 0 40px 0;
 }
 .wrap {
   display: flex;
@@ -28,8 +29,13 @@ section {
   height: auto;
   margin-bottom: 20px;
   font-size: 20px;
-  background-color: #ccf4c3;
-  box-shadow: 5px 5px 10px 5px #316a25, -5px -5px 10px 5px #316a25;
+  background-color: #eff0f4;
+  border: 1px solid #000;
+  /* box-shadow: 5px 5px 10px 5px #316a25, -5px -5px 10px 5px #316a25; */
+  /* box-shadow: 5px 5px 25px 5px #000, -5px -5px 25px 5px #000; */
+}
+section:hover {
+  box-shadow: 5px 5px 45px 5px #05173e, -5px -5px 45px 5px #05173e;
 }
 section + section {
   width: 48%;
@@ -39,17 +45,17 @@ section + section {
   display: grid;
   grid-template-columns: auto repeat(10, 85px);
   grid-template-rows: repeat(5, 40px);
-  background-color: #ccf4c3;
+  background-color: #eff0f4;
   font-size: 1rem;
+  color: #05173e;
   margin: 0 20px 15px 20px;
 }
 .weather__grid div {
   padding-top: 10px;
   padding-bottom: 10px;
-  /* border: 1px solid orange; */
 }
 .title {
-  color: #316a25;
+  color: #05173e;
   font-size: 1.4rem;
   padding: 20px 0;
 }
@@ -65,12 +71,11 @@ section + section {
 
 .hour {
   grid-row: 2/3;
-  color: #316a25;
+  color: #05173e;
   border-bottom: 1px solid #000;
 }
 .city {
   grid-row: 1/2;
-  color: #316a25;
 }
 .temp {
   grid-row: 3/4;
@@ -85,11 +90,9 @@ section + section {
   grid-column: 2/8;
   text-align: left;
   padding-left: 15px;
-  color: #316a25;
 }
 .h {
   grid-row: 2/3;
-  color: #316a25;
   border-bottom: 1px solid #000;
 }
 .t {
@@ -104,7 +107,6 @@ section + section {
 .city__geo {
   grid-column: 7/10;
   grid-row: 1/2;
-  color: red;
 }
 
 /* LONG WEEKENDS */
@@ -132,7 +134,7 @@ img {
 .footer {
   width: 10%;
   margin-left: 90%;
-  color: #316a25;
+  color: #05173e;
   font-size: 1rem;
-  background-color: #ccf4c3;
+  background-color: #eff0f4;
 }

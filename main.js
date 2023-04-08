@@ -2,7 +2,7 @@ let longitudeGeo;
 let latitudeGeo;
 let cityGeo;
 
-// API POBIERAJĄCE GEOLOKALIZACJĘ wg IP
+// API DOWNLOAD GEOLOCALIZATION (from IP)
 const Geo = () => {
   const urlGeo = "http://ip-api.com/json/?fields=query,lat,lon,city";
   fetch(urlGeo)
@@ -22,7 +22,7 @@ const Geo = () => {
     .catch((err) => alert(err, "coś z Geolokalizacją jest nie tak!"));
 };
 
-// API POBIERAJĄCE POGODĘ
+// API DOWNLOAD WEATHER
 const Weather = () => {
   const urlWeather = `https://api.open-meteo.com/v1/forecast?latitude=${latitudeGeo}&longitude=${longitudeGeo}&hourly=temperature_2m,cloudcover,windspeed_80m,temperature_180m&models=gfs_global&current_weather=true&forecast_days=1&timezone=Europe%2FBerlin`;
 
@@ -39,17 +39,7 @@ const Weather = () => {
     .catch((err) => alert(err, "coś z Pogodą jest nie tak!"));
 };
 
-// API COFFEE
-// const Coffee = () => {
-//   const urlCoffee = "https://coffee.alexflipnote.dev/random.json";
-//   fetch(urlCoffee)
-//     .then((cup) => {
-//       return cup.json();
-//     })
-//     .then((cup) => console.log(cup));
-// };
-
-// API Z LONG WEEKENDS
+// API WITH LONG WEEKENDS (maybe future)
 // const Weekends = () => {
 //   const urlWeekends = "https://date.nager.at/api/v3/PublicHolidays/2023/PL";
 //   fetch(urlweekends)
@@ -75,7 +65,7 @@ const Cats = () => {
     .catch(Error("coś z Kotami jest nie tak!"));
 };
 
-// WYŚWIETL WYNIKI w DOM
+// SHOW RESULTS in DOM
 const showWeather = (climate) => {
   const resultArea = document.querySelector(".weather__grid");
 
@@ -113,7 +103,7 @@ const showWeather = (climate) => {
   }
 };
 
-// FURURE
+// FUTURE
 // const showWeekends = (days) => {
 //   const resultArea = document.querySelector(".weekends__show");
 //   const weekends = document.createElement("div");
@@ -134,7 +124,7 @@ const showCat = (cat) => {
   resultArea.appendChild(img);
 };
 
-// WYKONAJ API
+// RUN API
 Geo();
 showCoffee();
 Cats();
