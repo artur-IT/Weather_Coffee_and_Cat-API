@@ -31,8 +31,6 @@ section {
   font-size: 20px;
   background-color: #eff0f4;
   border: 1px solid #000;
-  /* box-shadow: 5px 5px 10px 5px #316a25, -5px -5px 10px 5px #316a25; */
-  /* box-shadow: 5px 5px 25px 5px #000, -5px -5px 25px 5px #000; */
 }
 section:hover {
   box-shadow: 5px 5px 45px 5px #05173e, -5px -5px 45px 5px #05173e;
@@ -109,7 +107,7 @@ section + section {
   grid-row: 1/2;
 }
 
-/* LONG WEEKENDS */
+/* LONG WEEKENDS (future) */
 /* .weekends__grid {
   display: grid;
   grid-template-columns: auto auto 400px repeat(6, 75px);
