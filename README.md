@@ -1,4 +1,4 @@
-![screen](/screen.jpg)
+![screen](/screen.png)
 
 # API with Weather info in Your place and gratis coffe \/ cat
 
