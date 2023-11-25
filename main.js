@@ -4,14 +4,15 @@ let cityGeo;
 
 // API DOWNLOAD GEOLOCATION (from IP)
 Geo = () => {
-  fetch("http://ip-api.com/json/?fields=query,lat,lon,city")
+  // fetch("http://ip-api.com/json/?fields=query,lat,lon,city")
+  fetch("https://ipapi.co/json/")
     .then((geo) => {
       if (geo.status !== 200) throw Error("Hmmm, something is wrong!");
       else return geo.json();
     })
     .then((geo) => {
-      longitudeGeo = geo.lon;
-      latitudeGeo = geo.lat;
+      longitudeGeo = geo.longitude;
+      latitudeGeo = geo.latitude;
       cityGeo = geo.city;
       Weather();
     })
