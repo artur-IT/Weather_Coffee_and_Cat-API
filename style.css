@@ -161,3 +161,22 @@ img {
     margin: 15px auto;
   }
 }
+
+@media (max-width: 1000px) and (orientation: landscape) {
+  .wrap {
+    width: 90vw;
+  }
+
+  .weather__grid {
+    grid-template-columns: 70px repeat(10, 72px);
+  }
+
+  .hour,
+  .city,
+  .temp,
+  .wind,
+  .cloud {
+    width: 60px;
+    padding-left: 0;
+  }
+}

@@ -54,7 +54,7 @@ showWeather = (climate) => {
   const wind = [...climate.hourly.windspeed_80m];
   for (let i = 14; i < wind.length; i++) {
     const text = document.createElement("div");
-    text.textContent = `${wind[i]} km/h`;
+    text.textContent = `${wind[i].toFixed()} km/h`;
     text.classList.add("w");
     resultArea.appendChild(text);
   }
