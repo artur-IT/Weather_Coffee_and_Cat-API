@@ -1,20 +1,33 @@
-# API with Weather info and coffe / cat
+![screen](/screen.jpg)
 
-{PL}
+# API with Weather info in Your place and gratis coffe \/ cat
 
-Projekt wykorzystujący API do pobierania informacji o pogodzie, a następnie ich prezentacji.
-Dodatkowo kawa na dziś i losowy 'kot sugerujący' co powinieneś teraz zrobić ;)
+A project using an API to download weather information and then present it.
 
-Pogoda się nie pobiera :( może kiedyś to rozszyfruję i naprawię (początkowo działała).
+Plus coffee for today and a random 'cat suggesting what you should do now ;)
 
+[Let me see this weather!](https://artur-it.github.io/Weather_Coffee_and_Cat-API/)
 
+## 💡 Technologies
 
-## Autor
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-Link to project : [@artur-IT/API-Dogs](https://github.com/artur-IT/AJAX-my_Fetch_project)
+&nbsp;
 
+## 🤔 Solutions in the project
 
-## Cechy
+- free API Weather and Geolocation
+- Weather in Grid CSS
+- only Functions
 
-- 3x API
-- JS
+&nbsp;
+
+- get Geolocation
+
+![screen](/geolocal.png)
+
+- API Weather
+
+![screen](/weather.png)
