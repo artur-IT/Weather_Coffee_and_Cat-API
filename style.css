@@ -10,8 +10,9 @@
 }
 
 body {
-  background-image: url("clouds.jpg");
+  background-image: url("sky.jpg");
   background-size: cover;
+  background-attachment: fixed;
 }
 .wrap {
   display: flex;
@@ -27,9 +28,11 @@ section {
   font-size: 20px;
   background-color: #eff0f4;
   border: 1px solid #000;
+  transition: 0.5s;
 }
 section:hover {
-  box-shadow: 5px 5px 45px 5px #05173e, -5px -5px 45px 5px #05173e;
+  box-shadow: 5px 5px 15px 5px #fff, -5px -5px 15px 5px #fff;
+  border: none;
 }
 section + section {
   width: 48%;
