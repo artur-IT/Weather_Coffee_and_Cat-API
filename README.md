@@ -6,7 +6,7 @@ A project using an API to download weather information and then present it.
 
 Plus coffee for today and a random 'cat suggesting what you should do now ;)
 
-[Let me see this weather!](https://artur-it.github.io/Weather_Coffee_and_Cat-API/)
+Project URL: [Let me see this weather!](https://artur-it.github.io/Weather_Coffee_and_Cat-API/)
 
 ## 💡 Technologies
 
